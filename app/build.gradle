@@ -17,10 +17,11 @@ android {
            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
        }
     }
-
 }
 
 dependencies {
     implementation project(':feature')
     implementation project(':base')
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
 }
