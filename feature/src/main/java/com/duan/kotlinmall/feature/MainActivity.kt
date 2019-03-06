@@ -1,8 +1,7 @@
 package com.duan.kotlinmall.feature
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.duan.kotlinmall.feature.R
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 

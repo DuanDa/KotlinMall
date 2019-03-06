@@ -1,1 +1,1 @@
-include ':feature', ':app', ':base', ':instantapp', ':baselibrary', ':provider'
+include ':feature', ':app', ':base', ':instantapp', ':baselibrary', ':provider', ':usercenter'

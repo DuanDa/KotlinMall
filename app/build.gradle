@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion rootProject.ext.compile_sdk_version
     
     defaultConfig {
         applicationId "com.duan.kotlinmall.app"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion rootProject.ext.min_sdk_verion
+        targetSdkVersion rootProject.ext.target_sdk_version
         versionCode 1
         versionName "1.0"
     }
@@ -22,6 +22,10 @@ android {
 dependencies {
     implementation project(':feature')
     implementation project(':base')
+
+    if (isUserModule.toBoolean()) {
+        implementation project(':usercenter')
+    }
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
 }
